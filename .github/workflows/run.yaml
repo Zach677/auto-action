@@ -33,7 +33,7 @@ jobs:
           python check_websites.py
           sh ./commit.sh
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
           GITHUB_REPOSITORY: ${{ github.repository }}
 
       - name: Push
