@@ -46,7 +46,7 @@ const check = async (name: string, url: string) => {
 }
 
 async function main() {
-  await rm('./readme.md', {
+  await rm('./README.md', {
     force: true,
   })
   await Promise.all([
