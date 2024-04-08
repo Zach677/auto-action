@@ -1,4 +1,3 @@
-# Ignore virtual environment
+.secrets
+node_modules
 venv/
-.DS_Store
-__pycache__/
