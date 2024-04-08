@@ -7,7 +7,7 @@
     "build": "esno index.ts"
   },
   "keywords": [],
-  "author": "Ssttar",
+  "author": "Innei",
   "license": "ISC",
   "dependencies": {
     "@types/node": "17.0.42",
