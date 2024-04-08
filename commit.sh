@@ -4,4 +4,4 @@ git config --global user.email "i@ssstttar.com"
 git add README.md
 # git commit -S -m 'Update at $(date +%Y-%m-%d)'
 git commit -m 'Update at '$(date +%Y-%m-%d)
-git push
+git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
