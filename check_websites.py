@@ -3,7 +3,7 @@ from datetime import datetime
 
 def check_website_status(name, url):
     try:
-        response = requests.get(url, timeout=10000, headers={
+        response = requests.get(url, timeout=30, headers={
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36',
             'Reference': url,
         })
@@ -24,7 +24,7 @@ def update_readme(name, status):
 if __name__ == "__main__":
     websites = [("腾讯", "https://www.qq.com"),
                 ("微博", "https://weibo.com"),
-                ("百度", "https://www.baidu.com")]
+                ("谷歌", "https://www.google.com")]
 
     # 清空 README.md 文件
     open('README.md', 'w').close()
