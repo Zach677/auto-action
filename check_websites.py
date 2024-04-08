@@ -3,7 +3,7 @@ from datetime import datetime
 
 def check_website_status(name, url):
     try:
-        response = requests.get(url, timeout=10, headers={
+        response = requests.get(url, timeout=10000, headers={
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36',
             'Reference': url,
         })
