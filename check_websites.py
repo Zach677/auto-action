@@ -14,8 +14,8 @@ def check_website_status(name, url):
 
 def update_readme(name, status):
     current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    status_text = "没倒闭" if status else "倒闭了"
-    big_head = f"# 今天{name}倒闭了吗\n\n"
+    status_text = "没关门" if status else "关门了"
+    big_head = f"# 今天{name}关门了吗\n\n"
     content = f"{big_head}{current_datetime} {status_text}\n\n"
 
     with open('README.md', 'a') as readme_file:
