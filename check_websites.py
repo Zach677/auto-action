@@ -24,7 +24,7 @@ def update_readme(name, status):
 if __name__ == "__main__":
     websites = [("腾讯", "https://www.qq.com"),
                 ("微博", "https://weibo.com"),
-                ("谷歌", "https://www.google.com")]
+                ("百度", "https://www.baidu.com")]
 
     # 清空 README.md 文件
     open('README.md', 'w').close()
